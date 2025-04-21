@@ -33,6 +33,13 @@ Within 10 seconds, repeated requests for the same stock return from cache.
 Logs show cache behavior (hit/miss) and timestamp.
 
 
+🔗 API Endpoint
+➤ GET /api/stocks/{symbol}
+Returns the latest stock price for the given symbol.
+
+✅ Example:
+curl http://localhost:8080/api/stocks/AAPL
+
 ## 🔧 Configuration
 
 ### 📄 `application.yml`
@@ -52,10 +59,3 @@ logging:
   level:
     org.springframework.cache.interceptor.CacheInterceptor: DEBUG
 
-
-🔗 API Endpoint
-➤ GET /api/stocks/{symbol}
-Returns the latest stock price for the given symbol.
-
-✅ Example:
-curl http://localhost:8080/api/stocks/AAPL
