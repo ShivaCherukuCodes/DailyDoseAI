@@ -1,0 +1,22 @@
+stock:
+  api:
+    key: f171f0917091462e8edc14326c5d2e78
+
+spring:
+  cache:
+    cache-names: stocks
+    caffeine:
+      spec: maximumSize=1000,expireAfterWrite=10s
+
+logging:
+  level:
+    org.springframework.cache.interceptor.CacheInterceptor: DEBUG
+
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,caches
+

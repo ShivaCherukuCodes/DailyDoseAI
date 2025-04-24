@@ -1,4 +1,4 @@
-package com.shivacherukucodes.stockfetcher;
+package com.dailydoseai;
 
 import jakarta.annotation.PreDestroy;
 import org.slf4j.Logger;
@@ -11,14 +11,14 @@ import java.time.LocalDateTime;
 
 @SpringBootApplication
 @EnableCaching
-public class StockPriceFetcherApplication {
-    private static final Logger logger = LoggerFactory.getLogger(StockPriceFetcherApplication.class);
+public class DailyDoseAIApplication {
+    private static final Logger logger = LoggerFactory.getLogger(DailyDoseAIApplication.class);
 
     public static void main(String[] args) {
         try {
-            SpringApplication.run(StockPriceFetcherApplication.class, args);
+            SpringApplication.run(DailyDoseAIApplication.class, args);
             LocalDateTime now = LocalDateTime.now();
-            logger.info("<<<<<<<<<<<< StockPriceFetcherApplication started at "+ now + " successfully >>>>>>>>>>>>");
+            logger.info("<<<<<<<<<<<< DailyDoseAIApplication started at "+ now + " successfully >>>>>>>>>>>>");
             if (args.length > 0) {
                 logger.info("Application started with arguments:");
                 for (String arg : args) {
@@ -32,6 +32,6 @@ public class StockPriceFetcherApplication {
 
     @PreDestroy
     public void onShutdown() {
-        logger.info("<<<<<<<<<<<< StockPriceFetcherApplication is shutting down >>>>>>>>>>>>");
+        logger.info("<<<<<<<<<<<< DailyDoseAIApplication is shutting down >>>>>>>>>>>>");
     }
 }

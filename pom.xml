@@ -4,12 +4,11 @@
          http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.shivacherukucodes</groupId>
-    <artifactId>stock-price-fetcher</artifactId>
+    <groupId>com.dailydoseai</groupId>
+    <artifactId>daily-dose-ai</artifactId>
     <version>1.0.0</version>
     <packaging>jar</packaging>
-    <name>Stock Price Fetcher</name>
-    <description>Fetch stock prices from external APIs with circuit breaker resilience</description>
+    <name>Daily Dose AIr</name>
 
 
     <parent>
